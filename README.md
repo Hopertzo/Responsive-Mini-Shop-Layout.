@@ -15,7 +15,7 @@ The main goal of this project was to **practice responsive design concepts** by 
 
 ## Live Demo.
 
-[Responsive Mini Shop Layout on GitHub Pages](https://YOUR_USERNAME.github.io/Responsive-Mini-Shop/).
+[Responsive Mini Shop Layout on GitHub Pages](https://hopertzo.github.io/Responsive-Mini-Shop-Layout./).
 
 ## Credits.
 - Author: **Justine Ngulwa**.
