@@ -1,0 +1,212 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+
+body{
+    font-family: 'verdana', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(#333, #d1cfcf, #333);
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.header{
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1em 1em 1.5em;
+}
+
+.logo{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 4em;
+    margin-bottom: .125em;
+    background: url(../images/hoodie.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 96%, 0);
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.navigation a{
+    font-size: .8em;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.navigation a::after{
+    color: #f5f5f5;
+}
+
+.container{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    row-gap: 1em;
+}
+
+
+.product{
+    width: 70%;
+    display: grid;
+    place-self: center;
+    border-radius: 1em;
+}
+
+.productinfo{
+    padding: .8em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button{
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #302f2f;
+    color: #f5f5f5;
+    padding: .5em 1.5em;
+    border: none;
+    border-radius: .5em;
+}
+
+.footer{
+    bottom: 0;
+    padding: 1.5em 0;
+    font-size: .7em;
+}
+
+.footer h2{
+    display: none;
+}
+
+.footerlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.footerlinks a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+/* WE BEGIN RESPONSIVE DESIGNING BASED ON SCREEN SIZES */
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navigation{
+        gap: 2.5rem;
+    }
+    
+    .container{
+        margin-top: 0;
+        margin-inline: 5%;
+    }
+
+    .productcard{
+        place-content: center;
+    }
+
+    .product{
+        width: 80%;
+    }
+
+    .footer{
+        min-height: 8vh;
+    }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+
+    header{
+        padding-inline: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product{
+        width: 85%;
+    }
+}
+
+
+/* XL */
+@media screen and (min-width: 1200px) {
+
+    .product{
+        width: 85%;
+    }
+
+    .navigation a:hover ,
+    .navigation a:focus{
+        text-decoration: underline;
+    }
+
+    .button:hover,
+    .button:focus{
+        background-color: #525050;
+        color: #f5f5f5;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .footer h2{
+        display: block;
+    }
+
+    .footerlinks{
+        gap: 1rem;
+    }
+
+    .footerlinks a:hover ,
+    .footerlinks a:focus{
+        text-decoration: underline;
+    }
+}
+
+/* 2XL */
+@media screen and (min-width: 1400px) {
+
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: 15%;
+    }
+
+    .navigation a:hover ,
+    .navigation a:focus{
+        text-decoration: underline;
+    }
+
+    .footerlinks a:hover ,
+    .footerlinks a:focus{
+        text-decoration: underline;
+    }
+}
