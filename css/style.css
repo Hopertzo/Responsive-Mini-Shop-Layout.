@@ -156,6 +156,11 @@ body{
 /* XL */
 @media screen and (min-width: 1200px) {
 
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: 15%;
+    }
+
     .product{
         width: 85%;
     }
